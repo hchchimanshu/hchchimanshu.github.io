@@ -69,3 +69,41 @@ footer {
     font-size: 0.9rem;
     color: #777;
 }
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.subtitle span {
+    font-weight: 500;
+}
+
+.skills {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.skill i {
+    font-size: 48px;
+    margin-bottom: 6px;
+}
+
