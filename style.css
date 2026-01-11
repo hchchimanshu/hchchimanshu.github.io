@@ -127,23 +127,5 @@ footer {
     color: #777;
 }
 
-<script>
-    function showProjects(type) {
-        const flutter = document.getElementById("flutter-projects");
-        const android = document.getElementById("android-projects");
-        const buttons = document.querySelectorAll(".toggle-btn");
 
-        buttons.forEach(btn => btn.classList.remove("active"));
-
-        if (type === "flutter") {
-            flutter.classList.remove("hidden");
-            android.classList.add("hidden");
-            buttons[0].classList.add("active");
-        } else {
-            android.classList.remove("hidden");
-            flutter.classList.add("hidden");
-            buttons[1].classList.add("active");
-        }
-    }
-</script>
 
