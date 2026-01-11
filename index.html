@@ -50,22 +50,52 @@
 
     <!-- SKILLS -->
     <section id="skills">
-        <h2>Skills</h2>
+    <h2 class="center">My Skills</h2>
 
-        <div class="skills">
-            <span><i class="devicon-flutter-plain colored"></i> Flutter</span>
-            <span><i class="devicon-android-plain colored"></i> Android</span>
-            <span><i class="devicon-kotlin-plain colored"></i> Kotlin</span>
-            <span><i class="devicon-java-plain colored"></i> Java</span>
-        </div>
+    <div class="skill-chips">
+        <!-- Flutter -->
+        <span class="chip">Flutter</span>
+        <span class="chip">Dart</span>
+        <span class="chip">State Management (Bloc / Riverpod / Provider)</span>
 
-        <p class="stack">
-            MVVM · Clean Architecture · Coroutines · Retrofit · Firebase ·
-            Google Maps · BLE · SQLite · Realm · Jetpack Compose
-        </p>
-    </section>
+        <!-- Android -->
+        <span class="chip">Native Android</span>
+        <span class="chip">Kotlin</span>
+        <span class="chip">Java</span>
+        <span class="chip">Jetpack Compose</span>
+        <span class="chip">XML Layouts</span>
 
-    <!-- PROJECTS -->
+        <!-- Architecture -->
+        <span class="chip wide">MVVM & Clean Architecture</span>
+        <span class="chip wide">Background Services & WorkManager</span>
+
+        <!-- Data & APIs -->
+        <span class="chip">REST APIs</span>
+        <span class="chip">Retrofit</span>
+        <span class="chip">WebSockets</span>
+
+        <!-- Storage -->
+        <span class="chip">SQLite</span>
+        <span class="chip">Room</span>
+        <span class="chip">Realm DB</span>
+
+        <!-- Platform features -->
+        <span class="chip">Location & Maps (Google Maps)</span>
+        <span class="chip">Bluetooth / BLE</span>
+        <span class="chip">Wear OS</span>
+
+        <!-- Tools -->
+        <span class="chip">Firebase</span>
+        <span class="chip">Git</span>
+        <span class="chip">CI/CD</span>
+
+        <!-- Deployment -->
+        <span class="chip wide">Play Store & App Store Deployment</span>
+    </div>
+</section>
+
+
+    <!-- <!-- PROJECTS -->
     <section id="projects">
         <h2>Projects</h2>
 
@@ -79,8 +109,11 @@
             </p>
 
             <img src="assets/images/orbis/orbis-1.png" alt="Orbis Red Alert" />
+            
 
-            <span class="note">Enterprise application (private distribution)</span>
+            <a class="link" href="https://play.google.com/store/apps/details?id=com.orbisredalertprofessional&hl=en_IN" target="_blank">
+                <i class="fa-brands fa-google-play"></i> Play Store
+            </a>
         </div>
 
         <!-- TRAVEL KHANA -->
@@ -134,7 +167,80 @@
             </a>
         </div>
 
-    </section>
+    </section> -->
+
+    <section id="projects">
+    <h2 class="center">Projects</h2>
+
+    <!-- Toggle Buttons -->
+    <div class="project-toggle">
+        <button class="toggle-btn active" onclick="showProjects('flutter')">
+            Flutter
+        </button>
+        <button class="toggle-btn" onclick="showProjects('android')">
+            Native Android
+        </button>
+    </div>
+
+    <!-- FLUTTER PROJECTS (default visible) -->
+    <div id="flutter-projects" class="project-group">
+
+        <div class="project">
+            <h3>Field Force Connect</h3>
+            <p>
+                Workforce attendance and tracking app with background location,
+                geo-fencing and optimized native services.
+            </p>
+            <img src="assets/images/fieldforce/fieldforce-1.png" alt="Field Force Connect">
+            <div class="links">
+                <a href="https://play.google.com/store/apps/details?id=com.chatongo.vendorapp.fieldforceconnect" target="_blank">Play Store</a>
+                <a href="https://apps.apple.com/in/app/field-force-connect/id1348729381" target="_blank">App Store</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Arokiya</h3>
+            <p>
+                UK-based online supermarket app offering 20,000+ products,
+                built using Flutter for Android and iOS.
+            </p>
+            <img src="assets/images/arokiya/arokiya-1.png" alt="Arokiya">
+            <div class="links">
+                <a href="https://play.google.com/store/apps/details?id=com.arokiya.android.app" target="_blank">Play Store</a>
+                <a href="https://apps.apple.com/us/app/arokiya/id1529398160" target="_blank">App Store</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ANDROID PROJECTS -->
+    <div id="android-projects" class="project-group hidden">
+
+        <div class="project">
+            <h3>Orbis Red Alert Pro</h3>
+            <p>
+                Enterprise lone-worker safety application with fall detection,
+                SOS escalation, background tracking and Wear OS integration.
+            </p>
+            <img src="assets/images/orbis/orbis-1.png" alt="Orbis Red Alert">
+            <span class="note">Enterprise application (private distribution)</span>
+        </div>
+
+        <div class="project">
+            <h3>Travel Khana (1M+ Downloads)</h3>
+            <p>
+                Food delivery app for train travelers with PNR-based journey
+                detection and real-time order tracking.
+            </p>
+            <img src="assets/images/travelkhana/travelkhana-1.png" alt="Travel Khana">
+            <div class="links">
+                <a href="https://play.google.com/store/apps/details?id=com.travelkhana" target="_blank">Play Store</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 
     <!-- CONTACT -->
     <section id="contact">
