@@ -1,123 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Himanshu HC | Flutter & Android Developer</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himanshu HC | Flutter & Native Android Developer</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="container nav-content">
-      <div class="logo">Himanshu HC</div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+<!-- NAV -->
+<header class="nav">
+    <div class="nav-inner">
+        <div class="brand">Himanshu HC</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </div>
-  </header>
+</header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-content">
-      <h1>Flutter & Native Android Developer</h1>
-      <p class="subtitle">
-        Building scalable, production-ready mobile applications for enterprise and consumer use.
-      </p>
-      <p class="experience">5+ years of real-world mobile development experience</p>
-    </div>
-  </section>
+<!-- HERO -->
+<section class="hero">
+    <h1>Flutter & Native Android Developer</h1>
+    <p>
+        5+ years of experience building scalable, production-ready mobile applications
+    </p>
+</section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About</h2>
-      <p class="text">
-        I’m a Flutter & Native Android Developer with over <strong>5 years of experience</strong>
-        working on enterprise-grade and consumer-facing mobile applications.
-        I specialize in clean architecture, performance optimization, background services,
-        location-based features, BLE, Wear OS, and long-running production reliability.
-      </p>
-    </div>
-  </section>
+<main class="container">
 
-  <!-- SKILLS -->
-  <section id="skills" class="section alt">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <span>Flutter</span>
-        <span>Dart</span>
-        <span>Kotlin</span>
-        <span>Java</span>
-        <span>Android SDK</span>
-        <span>Jetpack Compose</span>
-        <span>XML Layouts</span>
-        <span>MVVM</span>
-        <span>Clean Architecture</span>
-        <span>WorkManager</span>
-        <span>Background Services</span>
-        <span>REST APIs</span>
-        <span>Retrofit</span>
-        <span>WebSockets</span>
-        <span>SQLite</span>
-        <span>Room</span>
-        <span>Firebase</span>
-        <span>Maps & Location</span>
-        <span>Bluetooth / BLE</span>
-        <span>Wear OS</span>
-        <span>Git</span>
-        <span>CI/CD</span>
-        <span>Play Store Deployment</span>
-      </div>
-    </div>
-  </section>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+            I’m a <strong>Flutter & Native Android Developer</strong> with
+            <strong>5+ years of experience</strong> working on enterprise and
+            consumer mobile applications.
+        </p>
+        <p>
+            I specialize in clean architecture, performance-critical features,
+            background services, location tracking, BLE, Wear OS,
+            and real-world production reliability.
+        </p>
+    </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2 class="center">My Skills</h2>
 
-      <div class="project-card">
-        <div class="project-info">
-          <h3>Orbis Red Alert Pro</h3>
-          <p>
-            Enterprise lone-worker safety application featuring fall detection,
-            no-movement alerts, SOS escalation, continuous background location tracking,
-            and Wear OS integration.
-          </p>
-          <a class="link" href="#" target="_blank">View on Play Store →</a>
+        <div class="skill-chips">
+            <span class="chip">Flutter</span>
+            <span class="chip">Dart</span>
+            <span class="chip">State Management (Bloc / Riverpod / Provider)</span>
+
+            <span class="chip">Native Android</span>
+            <span class="chip">Kotlin</span>
+            <span class="chip">Java</span>
+            <span class="chip">Jetpack Compose</span>
+            <span class="chip">XML Layouts</span>
+
+            <span class="chip wide">MVVM & Clean Architecture</span>
+            <span class="chip wide">Background Services & WorkManager</span>
+
+            <span class="chip">REST APIs</span>
+            <span class="chip">Retrofit</span>
+            <span class="chip">WebSockets</span>
+
+            <span class="chip">SQLite</span>
+            <span class="chip">Room</span>
+            <span class="chip">Realm DB</span>
+
+            <span class="chip">Location & Maps</span>
+            <span class="chip">Bluetooth / BLE</span>
+            <span class="chip">Wear OS</span>
+
+            <span class="chip">Firebase</span>
+            <span class="chip">Git</span>
+            <span class="chip">CI/CD</span>
+
+            <span class="chip wide">Play Store & App Store Deployment</span>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2 class="center">Projects</h2>
+
+        <!-- TOGGLE -->
+        <div class="project-toggle">
+            <button class="toggle-btn active" onclick="showProjects('flutter')">Flutter</button>
+            <button class="toggle-btn" onclick="showProjects('android')">Native Android</button>
         </div>
 
-        <div class="project-image">
-          <img src="project-placeholder.png" alt="Orbis Red Alert Pro Screenshots" />
+        <!-- FLUTTER -->
+        <div id="flutter-projects" class="project-group">
+            <div class="project">
+                <h3>Field Force Connect</h3>
+                <p>
+                    Workforce attendance and tracking app with background location,
+                    geo-fencing, and optimized native integrations.
+                </p>
+                <div class="links">
+                    <a href="https://play.google.com/store/apps/details?id=com.chatongo.vendorapp.fieldforceconnect" target="_blank">Play Store</a>
+                    <a href="https://apps.apple.com/in/app/field-force-connect/id1348729381" target="_blank">App Store</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Arokiya</h3>
+                <p>
+                    UK-based online supermarket app offering 20,000+ products,
+                    built using Flutter for Android and iOS.
+                </p>
+                <div class="links">
+                    <a href="https://play.google.com/store/apps/details?id=com.arokiya.android.app" target="_blank">Play Store</a>
+                    <a href="https://apps.apple.com/us/app/arokiya/id1529398160" target="_blank">App Store</a>
+                </div>
+            </div>
         </div>
-      </div>
 
-    </div>
-  </section>
+        <!-- ANDROID -->
+        <div id="android-projects" class="project-group hidden">
+            <div class="project">
+                <h3>Orbis Red Alert Pro</h3>
+                <p>
+                    Enterprise lone-worker safety application with fall detection,
+                    no-movement alerts, SOS escalation, background tracking,
+                    and Wear OS integration.
+                </p>
+                <span class="note">Enterprise application (private distribution)</span>
+            </div>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section alt">
-    <div class="container">
-      <h2>Contact</h2>
-      <p class="text">
-        Open to full-time roles, freelance projects, and technical collaborations.
-      </p>
-      <p class="text">
-        📧 himanshu@email.com<br/>
-        🌐 github.com/hchhimanshu
-      </p>
-    </div>
-  </section>
+            <div class="project">
+                <h3>Travel Khana (1M+ Downloads)</h3>
+                <p>
+                    Food delivery app for train travelers with PNR-based journey
+                    detection and real-time order tracking.
+                </p>
+                <div class="links">
+                    <a href="https://play.google.com/store/apps/details?id=com.travelkhana" target="_blank">Play Store</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer class="footer">
+    <!-- CONTACT -->
+    <section id="contact" class="section center">
+        <h2>Contact</h2>
+        <p>
+            <a href="mailto:himhc376@gmail.com">himhc376@gmail.com</a><br />
+            <a href="https://github.com/hchchimanshu" target="_blank">GitHub</a><br />
+            <a href="https://linkedin.com/in/himanshuhc/" target="_blank">LinkedIn</a>
+        </p>
+    </section>
+
+</main>
+
+<footer class="footer">
     © 2026 Himanshu HC
-  </footer>
+</footer>
+
+<script>
+function showProjects(type) {
+    document.getElementById("flutter-projects").classList.toggle("hidden", type !== "flutter");
+    document.getElementById("android-projects").classList.toggle("hidden", type !== "android");
+
+    document.querySelectorAll(".toggle-btn").forEach(btn => btn.classList.remove("active"));
+    document.querySelector(`.toggle-btn[onclick="showProjects('${type}')"]`).classList.add("active");
+}
+</script>
 
 </body>
 </html>
