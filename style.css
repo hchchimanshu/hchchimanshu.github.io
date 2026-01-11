@@ -234,3 +234,39 @@ nav a:hover {
         display: none;
     }
 }
+.contact-card {
+  max-width: 420px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.contact-item {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.contact-item a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+.center-block {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 17px;
+  color: #374151;
+  margin-bottom: 16px;
+}
+
