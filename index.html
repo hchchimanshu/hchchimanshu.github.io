@@ -10,9 +10,10 @@
 
 <body>
 
-<header class="nav">
-  <div class="nav-inner">
-    <div class="brand">Himanshu HC</div>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="container nav-content">
+    <div class="logo">Himanshu HC</div>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -22,93 +23,147 @@
   </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-  <h1>Flutter & Native Android Developer</h1>
-  <p>5+ years of experience building scalable, production-ready mobile applications</p>
+  <div class="container">
+    <h1>Flutter & Native Android Developer</h1>
+    <p class="subtitle">
+      Building scalable, production-ready mobile applications
+    </p>
+    <p class="experience">
+      5+ years of professional experience
+    </p>
+  </div>
 </section>
 
-<main class="container">
-
+<!-- ABOUT -->
 <section id="about" class="section">
-  <h2>About</h2>
-  <p>
-    I’m a <strong>Flutter & Native Android Developer</strong> with
-    <strong>5+ years of experience</strong> working on enterprise and consumer
-    mobile applications.
-  </p>
-  <p>
-    I specialize in clean architecture, performance-critical features,
-    background services, location tracking, BLE, Wear OS, and production reliability.
-  </p>
-</section>
-
-<section id="skills" class="section">
-  <h2 class="center">My Skills</h2>
-
-  <div class="skill-chips">
-    <span class="chip">Flutter</span>
-    <span class="chip">Dart</span>
-    <span class="chip">Bloc / Riverpod / Provider</span>
-
-    <span class="chip">Native Android</span>
-    <span class="chip">Kotlin</span>
-    <span class="chip">Java</span>
-    <span class="chip">Jetpack Compose</span>
-
-    <span class="chip wide">MVVM & Clean Architecture</span>
-    <span class="chip wide">Background Services & WorkManager</span>
-
-    <span class="chip">REST APIs</span>
-    <span class="chip">Retrofit</span>
-    <span class="chip">WebSockets</span>
-
-    <span class="chip">SQLite</span>
-    <span class="chip">Room</span>
-    <span class="chip">Realm</span>
-
-    <span class="chip">Google Maps</span>
-    <span class="chip">Bluetooth / BLE</span>
-    <span class="chip">Wear OS</span>
-
-    <span class="chip">Firebase</span>
-    <span class="chip">Git</span>
-    <span class="chip">CI/CD</span>
-
-    <span class="chip wide">Play Store & App Store Deployment</span>
+  <div class="container">
+    <h2>About</h2>
+    <p class="text">
+      I’m a <strong>Flutter & Native Android Developer</strong> with
+      <strong>5+ years of experience</strong> working on enterprise and consumer
+      mobile applications.
+    </p>
+    <p class="text">
+      I specialize in clean architecture, performance-critical features,
+      background services, location tracking, BLE, Wear OS, and production reliability.
+    </p>
   </div>
 </section>
 
+<!-- SKILLS -->
+<section id="skills" class="section alt">
+  <div class="container">
+    <h2>My Skills</h2>
+
+    <div class="skills-grid">
+      <span>Flutter</span>
+      <span>Dart</span>
+      <span>Bloc / Riverpod / Provider</span>
+
+      <span>Native Android</span>
+      <span>Kotlin</span>
+      <span>Java</span>
+      <span>Jetpack Compose</span>
+
+      <span>MVVM & Clean Architecture</span>
+      <span>Background Services & WorkManager</span>
+
+      <span>REST APIs</span>
+      <span>Retrofit</span>
+      <span>WebSockets</span>
+
+      <span>SQLite</span>
+      <span>Room</span>
+      <span>Realm</span>
+
+      <span>Google Maps</span>
+      <span>Bluetooth / BLE</span>
+      <span>Wear OS</span>
+
+      <span>Firebase</span>
+      <span>Git</span>
+      <span>CI/CD</span>
+
+      <span>Play Store & App Store Deployment</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
 <section id="projects" class="section">
-  <h2 class="center">Projects</h2>
+  <div class="container">
+    <h2>Projects</h2>
 
-  <div class="project-toggle">
-    <button class="toggle-btn active">Flutter</button>
-    <button class="toggle-btn">Native Android</button>
-  </div>
+    <div class="project-card">
+      <div class="project-info">
+        <h3>Field Force Connect</h3>
+        <p>
+          Workforce attendance and tracking app with background location,
+          geo-fencing, and optimized native integrations.
+        </p>
+        <a class="link" href="https://play.google.com/store/apps/details?id=com.chatongo.vendorapp.fieldforceconnect" target="_blank">
+          Play Store →
+        </a>
+      </div>
+    </div>
 
-  <div class="project">
-    <h3>Field Force Connect</h3>
-    <p>Workforce tracking app with background location and geo-fencing.</p>
-  </div>
+    <div class="project-card">
+      <div class="project-info">
+        <h3>Arokiya</h3>
+        <p>
+          UK-based online supermarket app offering 20,000+ products,
+          built using Flutter for Android and iOS.
+        </p>
+        <a class="link" href="https://play.google.com/store/apps/details?id=com.arokiya.android.app" target="_blank">
+          Play Store →
+        </a>
+      </div>
+    </div>
 
-  <div class="project">
-    <h3>Arokiya</h3>
-    <p>UK-based online supermarket app built with Flutter.</p>
+    <div class="project-card">
+      <div class="project-info">
+        <h3>Orbis Red Alert Pro</h3>
+        <p>
+          Enterprise lone-worker safety application with fall detection,
+          no-movement alerts, SOS escalation, background tracking,
+          and Wear OS integration.
+        </p>
+        <p class="text">Enterprise application (private distribution)</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-info">
+        <h3>Travel Khana (1M+ Downloads)</h3>
+        <p>
+          Food delivery app for train travelers with PNR-based
+          journey detection and real-time order tracking.
+        </p>
+        <a class="link" href="https://play.google.com/store/apps/details?id=com.travelkhana" target="_blank">
+          Play Store →
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="contact" class="section center">
-  <h2>Contact</h2>
-  <p>
-    himhc376@gmail.com<br>
-    github.com/hchchimanshu<br>
-    linkedin.com/in/himanshuhc
-  </p>
+<!-- CONTACT -->
+<section id="contact" class="section alt">
+  <div class="container">
+    <h2>Contact</h2>
+    <p class="text">
+      himhc376@gmail.com<br>
+      github.com/hchchimanshu<br>
+      linkedin.com/in/himanshuhc
+    </p>
+  </div>
 </section>
 
-</main>
-
-<footer class="footer">© 2026 Himanshu HC</footer>
+<footer class="footer">
+  © 2026 Himanshu HC
+</footer>
 
 </body>
 </html>
