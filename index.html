@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Himanshu HC | Flutter & Native Android Developer</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
@@ -14,40 +14,37 @@
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-    <div class="nav-container">
-        <span class="logo">Himanshu HC</span>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+<nav class="nav">
+    <div class="nav-inner">
+        <div class="logo">Himanshu HC</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
     </div>
 </nav>
 
-<div class="container">
+<main class="wrapper">
 
     <!-- HERO -->
     <section class="hero">
         <h1>Flutter & Native Android Developer</h1>
-        <p>Building scalable, production-ready mobile applications</p>
-        <span>5+ Years of Experience</span>
+        <p>5+ years of experience building scalable, production-ready mobile applications</p>
     </section>
 
     <!-- ABOUT -->
     <section id="about">
-        <h2>About Me</h2>
+        <h2>About</h2>
         <p>
-            I am a <strong>Flutter & Native Android Developer</strong> with
-            <strong>5+ years of experience</strong> in building high-performance,
-            scalable mobile applications for enterprise and consumer use cases.
+            I’m a <strong>Flutter & Native Android Developer</strong> with over
+            <strong>5 years of experience</strong> working on enterprise and
+            consumer-facing mobile applications.
         </p>
         <p>
-            My expertise includes background services, location tracking,
-            BLE, Wear OS, real-time safety systems, and API-driven architectures
-            using <strong>MVVM and Clean Architecture</strong>.
+            I focus on clean architecture, performance, background services,
+            location-based features, BLE, Wear OS, and real-world production reliability.
         </p>
     </section>
 
@@ -56,14 +53,14 @@
         <h2>Skills</h2>
 
         <div class="skills">
-            <div class="skill"><i class="devicon-flutter-plain colored"></i>Flutter</div>
-            <div class="skill"><i class="devicon-android-plain colored"></i>Android</div>
-            <div class="skill"><i class="devicon-kotlin-plain colored"></i>Kotlin</div>
-            <div class="skill"><i class="devicon-java-plain colored"></i>Java</div>
+            <span><i class="devicon-flutter-plain colored"></i> Flutter</span>
+            <span><i class="devicon-android-plain colored"></i> Android</span>
+            <span><i class="devicon-kotlin-plain colored"></i> Kotlin</span>
+            <span><i class="devicon-java-plain colored"></i> Java</span>
         </div>
 
-        <p class="tech">
-            MVVM · Clean Architecture · Coroutines · Dagger · Retrofit · Firebase ·
+        <p class="stack">
+            MVVM · Clean Architecture · Coroutines · Retrofit · Firebase ·
             Google Maps · BLE · SQLite · Realm · Jetpack Compose
         </p>
     </section>
@@ -72,75 +69,88 @@
     <section id="projects">
         <h2>Projects</h2>
 
-        <div class="project-card">
+        <!-- ORBIS -->
+        <div class="project">
             <h3>Orbis Red Alert Pro</h3>
             <p>
-                Enterprise lone worker safety application with fall detection,
-                no-movement alerts, SOS escalation, background tracking,
+                Enterprise lone-worker safety application with fall detection,
+                no-movement alerts, SOS escalation, background location tracking
                 and Wear OS integration.
             </p>
-            <img src="assets/images/orbis/orbis-1.png" alt="Orbis App">
-            <span class="private-note">Enterprise application (private distribution)</span>
+
+            <img src="assets/images/orbis/orbis-1.png" alt="Orbis Red Alert" />
+
+            <span class="note">Enterprise application (private distribution)</span>
         </div>
 
-        <div class="project-card">
+        <!-- TRAVEL KHANA -->
+        <div class="project">
             <h3>Travel Khana (1M+ Downloads)</h3>
             <p>
-                Food delivery app for train travelers with PNR-based journey detection
-                and real-time order tracking.
+                Food delivery app for train travelers with PNR-based journey
+                detection, station-wise ordering and real-time tracking.
             </p>
-            <img src="assets/images/travelkhana/travelkhana-1.png" alt="Travel Khana">
-            <a href="https://play.google.com/store/apps/details?id=com.travelkhana" target="_blank">
+
+            <img src="assets/images/travelkhana/travelkhana-1.png" alt="Travel Khana" />
+
+            <a class="link" href="https://play.google.com/store/apps/details?id=com.travelkhana" target="_blank">
                 <i class="fa-brands fa-google-play"></i> Play Store
             </a>
         </div>
 
-        <div class="project-card">
+        <!-- FIELD FORCE -->
+        <div class="project">
             <h3>Field Force Connect</h3>
             <p>
-                Workforce tracking and attendance app with background location,
-                geo-fencing, and real-time monitoring.
+                Workforce attendance and tracking app with background location,
+                geo-fencing and optimized native services.
             </p>
-            <img src="assets/images/fieldforce/fieldforce-1.png" alt="Field Force">
-            <a href="https://play.google.com/store/apps/details?id=com.chatongo.vendorapp.fieldforceconnect" target="_blank">
+
+            <img src="assets/images/fieldforce/fieldforce-1.png" alt="Field Force Connect" />
+
+            <a class="link" href="https://play.google.com/store/apps/details?id=com.chatongo.vendorapp.fieldforceconnect" target="_blank">
                 <i class="fa-brands fa-google-play"></i> Play Store
             </a>
-            <a href="https://apps.apple.com/in/app/field-force-connect/id1348729381" target="_blank">
+            <a class="link" href="https://apps.apple.com/in/app/field-force-connect/id1348729381" target="_blank">
                 <i class="fa-brands fa-apple"></i> App Store
             </a>
         </div>
 
-        <div class="project-card">
+        <!-- AROKIYA -->
+        <div class="project">
             <h3>Arokiya</h3>
             <p>
                 UK-based online supermarket app offering 20,000+ products,
                 built using Flutter for Android and iOS.
             </p>
-            <img src="assets/images/arokiya/arokiya-1.png" alt="Arokiya">
-            <a href="https://play.google.com/store/apps/details?id=com.arokiya.android.app" target="_blank">
+
+            <img src="assets/images/arokiya/arokiya-1.png" alt="Arokiya App" />
+
+            <a class="link" href="https://play.google.com/store/apps/details?id=com.arokiya.android.app" target="_blank">
                 <i class="fa-brands fa-google-play"></i> Play Store
             </a>
-            <a href="https://apps.apple.com/us/app/arokiya/id1529398160" target="_blank">
+            <a class="link" href="https://apps.apple.com/us/app/arokiya/id1529398160" target="_blank">
                 <i class="fa-brands fa-apple"></i> App Store
             </a>
         </div>
+
     </section>
 
     <!-- CONTACT -->
     <section id="contact">
         <h2>Contact</h2>
         <p>
-            <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:himhc376@gmail.com">himhc376@gmail.com</a><br>
-            <i class="fa-brands fa-github"></i>
-            <a href="https://github.com/hchchimanshu" target="_blank">GitHub</a><br>
-            <i class="fa-brands fa-linkedin"></i>
+            <a href="mailto:himhc376@gmail.com">himhc376@gmail.com</a><br />
+            <a href="https://github.com/hchchimanshu" target="_blank">GitHub</a><br />
             <a href="https://linkedin.com/in/himanshuhc/" target="_blank">LinkedIn</a>
         </p>
     </section>
 
-    <footer>© 2026 Himanshu HC</footer>
+</main>
 
-</div>
+<footer>
+    © 2026 Himanshu HC
+</footer>
+
 </body>
 </html>
