@@ -126,6 +126,49 @@ footer {
     padding: 30px;
     color: #777;
 }
+.project-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 30px 0 50px;
+}
+
+.toggle-btn {
+    padding: 12px 26px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.toggle-btn.active {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+}
+
+.project-group.hidden {
+    display: none;
+}
+
+.project {
+    max-width: 720px;
+    margin: 0 auto 64px;
+}
+
+.project img {
+    margin-top: 16px;
+    max-width: 320px;
+    border-radius: 14px;
+}
+
+.links a {
+    margin-right: 16px;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: 500;
+}
 
 
 
