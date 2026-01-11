@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Himanshu HC | Senior Android & Flutter Developer</title>
+    <title>Himanshu HC | Flutter & Native Android Developer</title>
 
-    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Icons -->
@@ -14,176 +13,133 @@
 </head>
 
 <body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-container">
+        <span class="logo">Himanshu HC</span>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
 <div class="container">
 
-    <!-- HEADER -->
-    <header>
-        <h1>Himanshu HC</h1>
-        <p class="subtitle">
-            Senior Android & Flutter Developer<br>
-            <span>4.8+ Years of Professional Experience</span>
-        </p>
-    </header>
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Flutter & Native Android Developer</h1>
+        <p>Building scalable, production-ready mobile applications</p>
+        <span>5+ Years of Experience</span>
+    </section>
 
-    <!-- ABOUT ME -->
-    <section>
+    <!-- ABOUT -->
+    <section id="about">
         <h2>About Me</h2>
         <p>
-            I am a results-driven <strong>Senior Android Developer with 4.8+ years of experience</strong>
-            working in product-based companies. I specialize in building
-            <strong>scalable, high-performance mobile applications</strong>
-            using Native Android and Flutter.
+            I am a <strong>Flutter & Native Android Developer</strong> with
+            <strong>5+ years of experience</strong> in building high-performance,
+            scalable mobile applications for enterprise and consumer use cases.
         </p>
         <p>
-            My expertise includes real-time safety systems, background services,
-            Wear OS integration, location tracking, BLE communication,
-            and API-driven applications using <strong>Clean Architecture and MVVM</strong>.
+            My expertise includes background services, location tracking,
+            BLE, Wear OS, real-time safety systems, and API-driven architectures
+            using <strong>MVVM and Clean Architecture</strong>.
         </p>
     </section>
 
-    <!-- CORE SKILLS -->
-    <section>
-        <h2>Core Skills</h2>
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
 
         <div class="skills">
-            <div class="skill"><i class="devicon-android-plain colored"></i><span>Android</span></div>
-            <div class="skill"><i class="devicon-flutter-plain colored"></i><span>Flutter</span></div>
-            <div class="skill"><i class="devicon-kotlin-plain colored"></i><span>Kotlin</span></div>
-            <div class="skill"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+            <div class="skill"><i class="devicon-flutter-plain colored"></i>Flutter</div>
+            <div class="skill"><i class="devicon-android-plain colored"></i>Android</div>
+            <div class="skill"><i class="devicon-kotlin-plain colored"></i>Kotlin</div>
+            <div class="skill"><i class="devicon-java-plain colored"></i>Java</div>
         </div>
 
         <p class="tech">
-            <strong>Architecture & Tools:</strong>
-            MVVM, Clean Architecture, Coroutines, Dagger, Retrofit, Firebase,
-            Google Maps, WebSockets, BLE, SQLite, Realm DB,
-            Jetpack Compose, Git, Jira
+            MVVM · Clean Architecture · Coroutines · Dagger · Retrofit · Firebase ·
+            Google Maps · BLE · SQLite · Realm · Jetpack Compose
         </p>
     </section>
 
-    <!-- ANDROID PROJECTS -->
-    <section>
-        <h2>Android Projects</h2>
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
 
-        <ul>
-            <li>
-                <strong>Orbis Red Alert Pro (Android + Wear OS)</strong><br>
-                Enterprise-grade lone worker safety application with fall detection,
-                no-movement alerts, Amber escalation, background location tracking,
+        <div class="project-card">
+            <h3>Orbis Red Alert Pro</h3>
+            <p>
+                Enterprise lone worker safety application with fall detection,
+                no-movement alerts, SOS escalation, background tracking,
                 and Wear OS integration.
-                <div class="project-gallery">
-                    <img src="assets/images/orbis/orbis-1.png" alt="Orbis Red Alert Pro Screenshot">
-                </div>
-                
-                <span class="store-links">
-                    <a href="https://play.google.com/store/apps/details?id=com.orbisredalertprofessional&hl=en_IN" target="_blank">
-                        <i class="fa-brands fa-google-play"></i> Play Store
-                    </a>
-                </span>
-            </li>
+            </p>
+            <img src="assets/images/orbis/orbis-1.png" alt="Orbis App">
+            <span class="private-note">Enterprise application (private distribution)</span>
+        </div>
 
-            <li>
-                <strong>Travel Khana App (1M+ Downloads)</strong><br>
-                Large-scale food delivery app for train travelers with PNR-based
-                journey detection, station-wise ordering, real-time delivery tracking.
-                <div class="project-gallery">
-                    <img src="assets/images/travelkhana/travelkhana-1.png" alt="Travel Khana Screenshot">
-                </div>
-                <span class="store-links">
-                    <a href="https://play.google.com/store/apps/details?id=com.travelkhana" target="_blank">
-                        <i class="fa-brands fa-google-play"></i> Play Store
-                    </a>
-                </span>
-            </li>
+        <div class="project-card">
+            <h3>Travel Khana (1M+ Downloads)</h3>
+            <p>
+                Food delivery app for train travelers with PNR-based journey detection
+                and real-time order tracking.
+            </p>
+            <img src="assets/images/travelkhana/travelkhana-1.png" alt="Travel Khana">
+            <a href="https://play.google.com/store/apps/details?id=com.travelkhana" target="_blank">
+                <i class="fa-brands fa-google-play"></i> Play Store
+            </a>
+        </div>
 
-            <li>
-                <strong>Bluetooth SpotyPal</strong><br>
-                BLE-based Android app for secure device pairing, scanning,
-                alert triggering, and device management.
-                <span class="store-links">
-                    <a href="https://github.com/hchchimanshu" target="_blank">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                </span>
-            </li>
-        </ul>
-    </section>
+        <div class="project-card">
+            <h3>Field Force Connect</h3>
+            <p>
+                Workforce tracking and attendance app with background location,
+                geo-fencing, and real-time monitoring.
+            </p>
+            <img src="assets/images/fieldforce/fieldforce-1.png" alt="Field Force">
+            <a href="https://play.google.com/store/apps/details?id=com.chatongo.vendorapp.fieldforceconnect" target="_blank">
+                <i class="fa-brands fa-google-play"></i> Play Store
+            </a>
+            <a href="https://apps.apple.com/in/app/field-force-connect/id1348729381" target="_blank">
+                <i class="fa-brands fa-apple"></i> App Store
+            </a>
+        </div>
 
-    <!-- FLUTTER PROJECTS -->
-    <section>
-        <h2>Flutter Projects</h2>
-
-        <ul>
-            <li>
-                <strong>Field Force Connect</strong><br>
-                Workforce attendance and tracking app with optimized native services,
-                background location tracking, geo-fencing, and real-time monitoring.
-                <div class="project-gallery">
-                    <img src="assets/images/fieldforce/fieldforce-1.png" alt="Field Force Connect Screenshot">
-                </div>
-                <span class="store-links">
-                    <a href="https://play.google.com/store/apps/details?id=com.chatongo.vendorapp.fieldforceconnect" target="_blank">
-                        <i class="fa-brands fa-google-play"></i> Play Store
-                    </a>
-                    <a href="https://apps.apple.com/in/app/field-force-connect/id1348729381" target="_blank">
-                        <i class="fa-brands fa-apple"></i> App Store
-                    </a>
-                </span>
-            </li>
-
-            <li>
-                <strong>Arokiya</strong><br>
-                UK-based online supermarket shopping app offering 20,000+ products,
-                built with Flutter for a seamless cross-platform experience.
-                <div class="project-gallery">
-                    <img src="assets/images/arokiya/arokiya-1.png" alt="Arokiya Screenshot">
-                </div>
-                <span class="store-links">
-                    <a href="https://play.google.com/store/apps/details?id=com.arokiya.android.app" target="_blank">
-                        <i class="fa-brands fa-google-play"></i> Play Store
-                    </a>
-                    <a href="https://apps.apple.com/us/app/arokiya/id1529398160" target="_blank">
-                        <i class="fa-brands fa-apple"></i> App Store
-                    </a>
-                </span>
-            </li>
-        </ul>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section>
-        <h2>Professional Experience</h2>
-        <ul>
-            <li><strong>Senior Android Developer — Orbis Protect </strong></li>
-            <li><strong>Assistant Technical Associate – Android — Duronto Technologies</strong></li>
-            <li><strong>Android Trainee — Veridic Technologies</strong></li>
-        </ul>
-    </section>
-
-    <!-- EDUCATION -->
-    <section>
-        <h2>Education</h2>
-        <p>
-            <strong>B.Tech in Computer Science & Engineering</strong><br>
-            DAV University (2016 – 2020)
-        </p>
+        <div class="project-card">
+            <h3>Arokiya</h3>
+            <p>
+                UK-based online supermarket app offering 20,000+ products,
+                built using Flutter for Android and iOS.
+            </p>
+            <img src="assets/images/arokiya/arokiya-1.png" alt="Arokiya">
+            <a href="https://play.google.com/store/apps/details?id=com.arokiya.android.app" target="_blank">
+                <i class="fa-brands fa-google-play"></i> Play Store
+            </a>
+            <a href="https://apps.apple.com/us/app/arokiya/id1529398160" target="_blank">
+                <i class="fa-brands fa-apple"></i> App Store
+            </a>
+        </div>
     </section>
 
     <!-- CONTACT -->
-    <section>
+    <section id="contact">
         <h2>Contact</h2>
-        <p class="contact">
+        <p>
             <i class="fa-solid fa-envelope"></i>
             <a href="mailto:himhc376@gmail.com">himhc376@gmail.com</a><br>
             <i class="fa-brands fa-github"></i>
-            <a href="https://github.com/hchchimanshu" target="_blank">github.com/hchchimanshu</a><br>
+            <a href="https://github.com/hchchimanshu" target="_blank">GitHub</a><br>
             <i class="fa-brands fa-linkedin"></i>
-            <a href="https://linkedin.com/in/himanshuhc/" target="_blank">linkedin.com/in/himanshuhc</a>
+            <a href="https://linkedin.com/in/himanshuhc/" target="_blank">LinkedIn</a>
         </p>
     </section>
 
-    <footer>
-        © 2026 Himanshu HC
-    </footer>
+    <footer>© 2026 Himanshu HC</footer>
 
 </div>
 </body>
