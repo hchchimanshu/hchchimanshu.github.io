@@ -1,169 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Himanshu HC | Flutter & Native Android Developer</title>
 
-  <link rel="stylesheet" href="./style.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himanshu HC | Flutter & Native Android Developer</title>
+
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="container nav-content">
-    <div class="logo">Himanshu HC</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">Himanshu HC</div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <h1>Flutter & Native Android Developer</h1>
-    <p class="subtitle">
-      Building scalable, production-ready mobile applications
-    </p>
-    <p class="experience">
-      5+ years of professional experience
-    </p>
-  </div>
-</section>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>Flutter & Native Android Developer</h1>
+            <p class="subtitle">
+                Building scalable, production-ready mobile applications
+            </p>
+            <p class="experience">
+                5+ YEARS OF PROFESSIONAL EXPERIENCE
+            </p>
+        </div>
+    </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <div class="container">
-    <h2>About</h2>
-    <p class="text">
-      I’m a <strong>Flutter & Native Android Developer</strong> with
-      <strong>5+ years of experience</strong> working on enterprise and consumer
-      mobile applications.
-    </p>
-    <p class="text">
-      I specialize in clean architecture, performance-critical features,
-      background services, location tracking, BLE, Wear OS, and production reliability.
-    </p>
-  </div>
-</section>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About</h2>
+            <p class="text">
+                I’m a <strong>Flutter & Native Android Developer</strong> with
+                <strong>5+ years of experience</strong> working on enterprise and
+                consumer mobile applications.
+            </p>
+            <p class="text">
+                I specialize in clean architecture, performance-critical features,
+                background services, location tracking, BLE, Wear OS, and real-world
+                production reliability.
+            </p>
+        </div>
+    </section>
 
-<!-- SKILLS -->
-<section id="skills" class="section alt">
-  <div class="container">
-    <h2>My Skills</h2>
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+        <div class="container">
+            <h2 class="center">My Skills</h2>
 
-    <div class="skills-grid">
-      <span>Flutter</span>
-      <span>Dart</span>
-      <span>Bloc / Riverpod / Provider</span>
+            <div class="skills-grid">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>Bloc / Riverpod / Provider</span>
 
-      <span>Native Android</span>
-      <span>Kotlin</span>
-      <span>Java</span>
-      <span>Jetpack Compose</span>
+                <span>Native Android</span>
+                <span>Kotlin</span>
+                <span>Java</span>
+                <span>Jetpack Compose</span>
+                <span>XML Layouts</span>
 
-      <span>MVVM & Clean Architecture</span>
-      <span>Background Services & WorkManager</span>
+                <span>MVVM & Clean Architecture</span>
+                <span>Background Services & WorkManager</span>
 
-      <span>REST APIs</span>
-      <span>Retrofit</span>
-      <span>WebSockets</span>
+                <span>REST APIs</span>
+                <span>Retrofit</span>
+                <span>WebSockets</span>
 
-      <span>SQLite</span>
-      <span>Room</span>
-      <span>Realm</span>
+                <span>SQLite</span>
+                <span>Room</span>
+                <span>Realm</span>
 
-      <span>Google Maps</span>
-      <span>Bluetooth / BLE</span>
-      <span>Wear OS</span>
+                <span>Google Maps</span>
+                <span>Bluetooth / BLE</span>
+                <span>Wear OS</span>
 
-      <span>Firebase</span>
-      <span>Git</span>
-      <span>CI/CD</span>
+                <span>Firebase</span>
+                <span>Git</span>
+                <span>CI/CD</span>
 
-      <span>Play Store & App Store Deployment</span>
-    </div>
-  </div>
-</section>
+                <span>Play Store & App Store Deployment</span>
+            </div>
+        </div>
+    </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <div class="container">
-    <h2>Projects</h2>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="center">Projects</h2>
 
-    <div class="project-card">
-      <div class="project-info">
-        <h3>Field Force Connect</h3>
-        <p>
-          Workforce attendance and tracking app with background location,
-          geo-fencing, and optimized native integrations.
-        </p>
-        <a class="link" href="https://play.google.com/store/apps/details?id=com.chatongo.vendorapp.fieldforceconnect" target="_blank">
-          Play Store →
-        </a>
-      </div>
-    </div>
+            <!-- TOGGLE -->
+            <div class="project-toggle">
+                <button class="toggle-btn active" onclick="showProjects('flutter')">
+                    Flutter
+                </button>
+                <button class="toggle-btn" onclick="showProjects('android')">
+                    Native Android
+                </button>
+            </div>
 
-    <div class="project-card">
-      <div class="project-info">
-        <h3>Arokiya</h3>
-        <p>
-          UK-based online supermarket app offering 20,000+ products,
-          built using Flutter for Android and iOS.
-        </p>
-        <a class="link" href="https://play.google.com/store/apps/details?id=com.arokiya.android.app" target="_blank">
-          Play Store →
-        </a>
-      </div>
-    </div>
+            <!-- FLUTTER PROJECTS -->
+            <div id="flutter-projects">
 
-    <div class="project-card">
-      <div class="project-info">
-        <h3>Orbis Red Alert Pro</h3>
-        <p>
-          Enterprise lone-worker safety application with fall detection,
-          no-movement alerts, SOS escalation, background tracking,
-          and Wear OS integration.
-        </p>
-        <p class="text">Enterprise application (private distribution)</p>
-      </div>
-    </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Field Force Connect</h3>
+                        <p>
+                            Workforce attendance and tracking app with background location,
+                            geo-fencing, and optimized native integrations.
+                        </p>
 
-    <div class="project-card">
-      <div class="project-info">
-        <h3>Travel Khana (1M+ Downloads)</h3>
-        <p>
-          Food delivery app for train travelers with PNR-based
-          journey detection and real-time order tracking.
-        </p>
-        <a class="link" href="https://play.google.com/store/apps/details?id=com.travelkhana" target="_blank">
-          Play Store →
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+                        <div class="store-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.chatongo.vendorapp.fieldforceconnect"
+                                target="_blank">
+                                <img src="assets/playstore.svg" alt="Play Store">
+                            </a>
+                            <a href="https://apps.apple.com/in/app/field-force-connect/id1348729381" target="_blank">
+                                <img src="assets/appstore.svg" alt="App Store">
+                            </a>
+                        </div>
+                    </div>
 
-<!-- CONTACT -->
-<section id="contact" class="section alt">
-  <div class="container">
-    <h2>Contact</h2>
-    <p class="text">
-      himhc376@gmail.com<br>
-      github.com/hchchimanshu<br>
-      linkedin.com/in/himanshuhc
-    </p>
-  </div>
-</section>
+                    <div class="project-image">
+                        <img src="assets/fieldforce-1.png" alt="Field Force Connect">
+                    </div>
+                </div>
 
-<footer class="footer">
-  © 2026 Himanshu HC
-</footer>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Arokiya</h3>
+                        <p>
+                            UK-based online supermarket app offering 20,000+ products,
+                            built using Flutter for Android and iOS.
+                        </p>
+
+                        <div class="store-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.arokiya.android.app"
+                                target="_blank">
+                                <img src="assets/playstore.svg">
+                            </a>
+                            <a href="https://apps.apple.com/us/app/arokiya/id1529398160" target="_blank">
+                                <img src="assets/appstore.svg">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-image">
+                        <img src="assets/arokiya-1.png">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ANDROID PROJECTS -->
+            <div id="android-projects" style="display:none;">
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Orbis Red Alert Pro</h3>
+                        <p>
+                            Enterprise lone-worker safety application with fall detection,
+                            no-movement alerts, SOS escalation, background tracking,
+                            and Wear OS integration.
+                        </p>
+                        <p class="note">Enterprise application (private distribution)</p>
+                    </div>
+
+                    <div class="project-image">
+                        <img src="assets/orbis-1.png">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Travel Khana (1M+ Downloads)</h3>
+                        <p>
+                            Food delivery app for train travelers with PNR-based
+                            journey detection and real-time order tracking.
+                        </p>
+                        <a class="link" href="https://play.google.com/store/apps/details?id=com.travelkhana"
+                            target="_blank">
+                            Play Store →
+                        </a>
+                    </div>
+
+                    <div class="project-image">
+                        <img src="assets/travelkhana-1.png">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+        <div class="container center">
+            <h2>Contact</h2>
+
+            <div class="contact-card">
+                <p>📧 himhc376@gmail.com</p>
+                <p>💻 github.com/hchchimanshu</p>
+                <p>🔗 linkedin.com/in/himanshuhc</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        © 2026 Himanshu HC
+    </footer>
+
+    <script>
+        function showProjects(type) {
+            document.getElementById('flutter-projects').style.display =
+                type === 'flutter' ? 'block' : 'none';
+            document.getElementById('android-projects').style.display =
+                type === 'android' ? 'block' : 'none';
+
+            document.querySelectorAll('.toggle-btn').forEach(btn =>
+                btn.classList.remove('active')
+            );
+
+            event.target.classList.add('active');
+        }
+    </script>
 
 </body>
+
 </html>
